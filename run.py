@@ -6,6 +6,7 @@ from threading import Thread
 from multiprocessing import Process,Queue
 base_url = "域名/.git/"
 q = Queue(maxsize=99999)
+# 爬取根域名
 q.put("")
 
 def file_tree():
